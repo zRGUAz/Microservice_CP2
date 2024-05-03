@@ -1,0 +1,23 @@
+<h1 class="mx-4">Lista de Pokémon</h1>
+
+<div class="col-md-6 mx-4 table-responsive">
+  <table class="table table-striped align-middle">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Imagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pokemon of lista">
+        <td>{{ pokemon.id }}</td>
+        <td>{{ pokemon.name }}</td>
+        <td><img [src]="pokemon.imageUrl" alt="Imagem do Pokémon"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+

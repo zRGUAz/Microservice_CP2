@@ -1,0 +1,20 @@
+<h1 class="mx-4">Lista de Estados IBGE</h1>
+
+<div class="col-md-6 mx-4 table-responsive">
+  <table table class="table table-striped align-middle">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Sigla</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of estados; let i = index;">
+        <td>{{ item.id }}</td>
+        <td>{{ item.nome }}</td>
+        <td>{{ item.sigla }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
